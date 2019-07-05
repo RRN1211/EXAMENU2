@@ -1,5 +1,5 @@
-async function create(product,product) {
-    var productoCreated = await product.create(product)
+async function create(Producto,producto) {
+    var ProductoCreated = await producto.create(Producto)
         .then((data) => {
             console.log("producto Guardado");
             return data;
@@ -8,5 +8,7 @@ async function create(product,product) {
             console.log("Error");
             return error;
         });
-    return productoCreated;
+    return ProductoCreated;
 }
+
+module.exports.create=create;
